@@ -1,7 +1,17 @@
 # Напишите программу, которая принимает на вход 2 строки и определяет, являюся ли они анаграммами.
 
-string_1 = "aprptbab"
-string_2 = "btrapabp"
+string_1 = "Цари, вино и сало"
+string_2 = "Лисица и ворона"
+
+
+string_1 = string_1.replace(" ", "")
+string_1 = string_1.replace(".", "")
+string_1 = string_1.replace(",", "")
+string_1 = string_1.lower()
+string_2 = string_2.replace(",", "")
+string_2 = string_2.replace(".", "")
+string_2 = string_2.replace(" ", "")
+string_2 = string_2.lower()
 
 dict_1 = {}
 dict_2 = {}
